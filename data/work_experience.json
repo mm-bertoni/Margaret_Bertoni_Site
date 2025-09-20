@@ -1,0 +1,60 @@
+{
+    "company": "Lumafield",
+    "companyType": "Startup",
+    "companyIndustry":"Industrial Hardware and Software",
+    "position":"Advanced Solutions Lead",
+    "startMonth": "March 2024",
+    "endMonth": "August 2024",
+    "items":["Used ilastik machine learning toolkit to develop a part segmentation model for a production application", "Learned Microsoft Azure AI Custom Vision to improve a classification model for a customer" , "Provided technical support by troubleshooting hardware and software issues for customers"],
+    "categories": ["Technical Support", "Machine Learning"]
+}
+{
+    "company": "Lumafield",
+    "companyType": "Startup",
+    "companyIndustry":"Industrial Hardware and Software",
+    "position":"Solutions Engineering Manager",
+    "startMonth": "August 2023",
+    "endMonth": "March 2024",
+    "items":["Managed a geographically distributed team of 8 Solutions Engineers through an org restructure", " Used Asana and Hubspot ticketing board to ensure on-time scan completion for internal customers", "Collaborated with the Marketing team to provide technical insights for white papers and partnerships"],
+    "categories": ["People Management", "Marketing","CRM"]
+}
+{
+    "company": "Lumafield",
+    "companyType": "Startup",
+    "companyIndustry":"Industrial Hardware and Software",
+    "position":"Application Engineering Lead",
+    "startMonth": "October 2022",
+    "endMonth": "August 2023",
+    "items":["Ran evaluations for hardware and software products, leading to 1.1M of Closed Won ARR", "Trained 3 new Application Engineers", "Developed pre-sales and post-sales support workflows and reporting in Hubspot CRM"],
+    "categories":["Sales Engineering", "Technical Training", "CRM", "Technical Support"]
+}
+{
+    "company": "Lumafield",
+    "companyType": "Startup",
+    "companyIndustry":"Industrial Hardware and Software",
+    "position":"Application Engineer",
+    "startMonth": "October 2021",
+    "endMonth": "October 2022",
+    "items":["Ran evaluations for hardware and software products, leading to over 0.5M of Closed Won ARR", "Developed and ran hardware and software training for external and internal customers", "Led a key account to a 400% increase in active software users over 3 months"],
+    "categories":["Sales Engineering", "Technical Training","Technical Support"]
+}
+{
+    "company": "Formlabs",
+    "companyType":"Startup",
+    "companyIndustry": "3D Printing Hardware and Software",
+    "position": "Application Engineer",
+    "startMonth": "November 2020",
+    "endMonth": "October 2021",
+    "items":["Created a Google Sheets tool for cost and ROI analysis for production 3D printing applications", "Self-taught SQL to analyze lead data from Salesforce, evaluated content performance for the BD team", "Advised customers on 3D printing and 3D print optimization"],
+    "categories":["Sales Engineering", "SQL","Marketing"]
+}
+{
+    "company": "Sage Analysis Group",
+    "companyType": "Small Business",
+    "companyIndustry": "Management Consulting",
+    "position": "Analyst",
+    "startMonth": "August 2019",
+    "endMonth": "October 2020",
+    "items": ["Self-taught R to clean and process datasets for the analysis of customer workflows","Developed internal documentation for an R Model to support onboarding and future development","Prototyped Tableau dashboards to present results for clients"],
+    "categories":["R", "Tableau", "Recruiting"]
+}
