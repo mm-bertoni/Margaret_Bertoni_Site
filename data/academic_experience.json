@@ -1,0 +1,18 @@
+{
+    "school":"Northeastern University",
+    "college":"Khoury College of Computer Science",
+    "degree":"Masters of Computer Science",
+    "startMonth":"September 2024",
+    "endMonth":"May 2027",
+    "gpa":"4.0/4.0",
+    "completedCourses":["Algorithms", "Foundations of CS (Python)", "Object Oriented Design (Java)", "Data Structures (C)"]
+}
+{
+    "school":"Massachusetts Institute of Technology (MIT)",
+    "college":"College of Engineering",
+    "degree":"SB in Mechanical Engineering, Minor in Public Policy",
+    "startMonth":"August 2015",
+    "endMonth":"June 2019",
+    "gpa":"4.6/5.0",
+    "completedCourses":["Toy Product Design","Undergraduate Research", "Making Public Policy", "Design and Manufacturing I/II", "US Social Policy", "Measurement & Instrumentation", "Product Engineering Processes", "Intro to Manufacturing Systems", "Senior Thesis: FEM"]
+}
