@@ -1,3 +1,4 @@
+[
 {
     "school":"Northeastern University",
     "college":"Khoury College of Computer Science",
@@ -6,7 +7,7 @@
     "endMonth":"May 2027",
     "gpa":"4.0/4.0",
     "completedCourses":["Algorithms", "Foundations of CS (Python)", "Object Oriented Design (Java)", "Data Structures (C)"]
-}
+},
 {
     "school":"Massachusetts Institute of Technology (MIT)",
     "college":"College of Engineering",
@@ -16,3 +17,4 @@
     "gpa":"4.6/5.0",
     "completedCourses":["Toy Product Design","Undergraduate Research", "Making Public Policy", "Design and Manufacturing I/II", "US Social Policy", "Measurement & Instrumentation", "Product Engineering Processes", "Intro to Manufacturing Systems", "Senior Thesis: FEM"]
 }
+]

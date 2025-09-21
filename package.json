@@ -1,0 +1,25 @@
+{
+  "name": "margaret_bertoni_site",
+  "version": "1.0.0",
+  "description": "Margaret Bertoni's Landing Page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mm-bertoni/Margaret_Bertoni_Site.git"
+  },
+  "keywords": [],
+  "author": "Margaret M Bertoni",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mm-bertoni/Margaret_Bertoni_Site/issues"
+  },
+  "homepage": "https://github.com/mm-bertoni/Margaret_Bertoni_Site#readme",
+  "devDependencies": {
+    "eslint": "^9.36.0",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.6.2"
+  }
+}
