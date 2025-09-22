@@ -1,7 +1,7 @@
 [
 {
     "company": "Lumafield",
-    "positionPicture":"./images/brassrat.gif",
+    "positionPicture":"../images/brassrat.gif",
     "companyType": "Startup",
     "companyIndustry":"Industrial Hardware and Software",
     "position":"Advanced Solutions Lead",
@@ -12,7 +12,7 @@
 },
 {
     "company": "Lumafield",
-    "positionPicture":"./images/lumafield_holiday.jpeg",
+    "positionPicture":"../images/lumafield_holiday.jpeg",
     "companyType": "Startup",
     "companyIndustry":"Industrial Hardware and Software",
     "position":"Solutions Engineering Manager",
@@ -23,7 +23,7 @@
 },
 {
     "company": "Lumafield",
-    "positionPicture":"./images/Margaret-Lumafield",
+    "positionPicture":"../images/Margaret-Lumafield.jpg",
     "companyType": "Startup",
     "companyIndustry":"Industrial Hardware and Software",
     "position":"Application Engineering Lead",
@@ -34,7 +34,7 @@
 },
 {
     "company": "Lumafield",
-    "positionPicture":"./images/firstdaylumafield",
+    "positionPicture":"../images/firstdaylumafield.jpg",
     "companyType": "Startup",
     "companyIndustry":"Industrial Hardware and Software",
     "position":"Application Engineer",
@@ -45,7 +45,7 @@
 },
 {
     "company": "Formlabs",
-    "positionPicture":"./images/formlabs",
+    "positionPicture":"../images/formlabs.jpg",
     "companyType":"Startup",
     "companyIndustry": "3D Printing Hardware and Software",
     "position": "Application Engineer",
@@ -56,7 +56,7 @@
 },
 {
     "company": "Sage Analysis Group",
-    "positionPicture":"./images/dc.jpg",
+    "positionPicture":"../images/dc.jpg",
     "companyType": "Small Business",
     "companyIndustry": "Management Consulting",
     "position": "Analyst",

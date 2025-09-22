@@ -6,13 +6,183 @@
     <meta name="author" content ="Margaret M Bertoni">
     <meta name="description" content="Margaret M Bertoni's Academic Experience">
     <title>Academic Experience</title>
+    <!--CSS Link-->
+    <link
+      rel="stylesheet"
+      href="../styles/style_vibecoded.css"/>
     <!--Bootstrap Link-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   </head>
 </head>
 <body>
-    
+  <!--Header with Nav Bar to Pages-->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-success " data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Margaret M Bertoni</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#">Academic Experience</a>
+                        <a class="nav-link" href="../index.html">Home</a>
+                        <a class="nav-link" href="../pages/work.html">Work Experience</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+
+    </div>
+<!--Vibecoded Cards Developed with Claude Sonnet 4-->
+<div class="container education-container">
+        <div class="text-center mb-5">
+            <h1 class="display-4 fw-bold text-dark mb-3">Margaret's Educational Journey</h1>
+            <p class="lead text-muted">Click on each card to explore the details</p>
+        </div>
+
+        <div class="row">
+            <!-- High School Card -->
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="flip-card ncssm" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="school-name">NC School of Science & Math</div>
+                            <div class="degree-title">High School Diploma</div>
+                            <div class="years">2013-2015</div>
+                            <i class="fas fa-graduation-cap flip-icon"></i>
+                            <div class="hover-hint">Click to explore</div>
+                        </div>
+                        <div class="flip-card-back">
+                            <button class="back-button" onclick="flipCard(this.closest('.flip-card')); event.stopPropagation();">
+                                <i class="fas fa-times"></i>
+                            </button>
+                            <div class="back-content">
+                                <div class="scrollable-content">
+                                    <h4><i class="fas fa-users me-2"></i>Activities</h4>
+                                    <div class="activities-list">
+                                        <ul>
+                                            <li>[Activity 1]</li>
+                                            <li>[Activity 2]</li>
+                                            <li>[Activity 3]</li>
+                                            <li>[Add more activities]</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <h4><i class="fas fa-book me-2"></i>Key Classes</h4>
+                                    <div class="classes-list">
+                                        <ul>
+                                            <li>[Class 1]</li>
+                                            <li>[Class 2]</li>
+                                            <li>[Class 3]</li>
+                                            <li>[Class 4]</li>
+                                            <li>[Class 5]</li>
+                                            <li>[Add more classes]</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Undergraduate Card -->
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="flip-card mit" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="school-name">MIT</div>
+                            <div class="degree-title">Bachelor of Science in Mechanical Engineering, Minor in Public Policy</div>
+                            <div class="years">2015-2019</div>
+                            <i class="fas fa-university flip-icon"></i>
+                            <div class="hover-hint">Click to explore</div>
+                        </div>
+                        <div class="flip-card-back">
+                            <button class="back-button" onclick="flipCard(this.closest('.flip-card')); event.stopPropagation();">
+                                <i class="fas fa-times"></i>
+                            </button>
+                            <div class="back-content">
+                                <div class="scrollable-content">
+                                    <h4><i class="fas fa-users me-2"></i>Activities</h4>
+                                    <div class="activities-list">
+                                        <ul>
+                                            <li>[Activity 1]</li>
+                                            <li>[Activity 2]</li>
+                                            <li>[Activity 3]</li>
+                                            <li>[Add more activities]</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <h4><i class="fas fa-book me-2"></i>Key Classes</h4>
+                                    <div class="classes-list">
+                                        <ul>
+                                            <li>[Class 1]</li>
+                                            <li>[Class 2]</li>
+                                            <li>[Class 3]</li>
+                                            <li>[Class 4]</li>
+                                            <li>[Class 5]</li>
+                                            <li>[Add more classes]</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Graduate Card -->
+            <div class="col-lg-4 col-12">
+                <div class="flip-card northeastern" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="school-name">Northeastern University</div>
+                            <div class="degree-title">Masters of Science in Computer Science</div>
+                            <div class="years">2024-2027(est)</div>
+                            <i class="fas fa-user-graduate flip-icon"></i>
+                            <div class="hover-hint">Click to explore</div>
+                        </div>
+                        <div class="flip-card-back">
+                            <button class="back-button" onclick="flipCard(this.closest('.flip-card')); event.stopPropagation();">
+                                <i class="fas fa-times"></i>
+                            </button>
+                            <div class="back-content">
+                                <div class="scrollable-content">
+                                    <h4><i class="fas fa-users me-2"></i>Activities</h4>
+                                    <div class="activities-list">
+                                        <ul>
+                                            <li>[Activity 1]</li>
+                                            <li>[Activity 2]</li>
+                                            <li>[Activity 3]</li>
+                                            <li>[Add more activities]</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <h4><i class="fas fa-book me-2"></i>Key Classes</h4>
+                                    <div class="classes-list">
+                                        <ul>
+                                            <li>[Class 1]</li>
+                                            <li>[Class 2]</li>
+                                            <li>[Class 3]</li>
+                                            <li>[Class 4]</li>
+                                            <li>[Class 5]</li>
+                                            <li>[Add more classes]</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+  
+</div>
     <!--JS Link-->
+   <script src="../js/academic_vibecoded.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
 </body>
