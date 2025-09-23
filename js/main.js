@@ -31,8 +31,9 @@ function MainModule(experienceID = "#experiences") {
                 alt=${experience.position}
                 />
                 <div class="card-body">
-                    <h5 class="card-title">${experience.company} : ${experience.position} : ${experience.startMonth} to ${experience.endMonth}</h5>
+                    <h5 class="card-title">${experience.company}</h5>
                     <p class="card-text">
+                       ${experience.position} : ${experience.startMonth} to ${experience.endMonth}
                        <ul>` + makeExperienceList(experience)
     );
   }
@@ -54,3 +55,4 @@ function MainModule(experienceID = "#experiences") {
 }
 const main = MainModule();
 main.loadData();
+
