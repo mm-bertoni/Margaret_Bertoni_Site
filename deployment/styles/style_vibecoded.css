@@ -1,0 +1,246 @@
+/*Vibecoded with Claude's Sonnet 4*/
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 2rem 0;
+    min-height: 100vh;
+}
+
+.education-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flip-card {
+    background-color: transparent;
+    height: 300px;
+    perspective: 1000px;
+    margin-bottom: 2rem;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+    justify-content: flex-start;
+    align-items: stretch;
+    text-align: left;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+/* Scrollable content area for back of cards */
+.back-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.scrollable-content {
+    flex: 1;
+    overflow-y: auto;
+    padding-right: 0.5rem;
+    margin-top: 2rem; /* Space for close button */
+}
+
+/* Custom scrollbar styling */
+.scrollable-content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.scrollable-content::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0.1);
+    border-radius: 3px;
+}
+
+.scrollable-content::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.3);
+    border-radius: 3px;
+}
+
+.scrollable-content::-webkit-scrollbar-thumb:hover {
+    background: rgba(0,0,0,0.5);
+}
+
+/* NCSSM Styling */
+.ncssm .flip-card-front {
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    color: white;
+    border-color: #fbbf24;
+}
+
+.ncssm .flip-card-back {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    border: 2px solid #1e3a8a;
+}
+
+.ncssm .scrollable-content::-webkit-scrollbar-thumb {
+    background: rgba(30, 58, 138, 0.6);
+}
+
+/* MIT Styling */
+.mit .flip-card-front {
+    background: linear-gradient(135deg, #A31F34 0%, #8b1538 100%);
+    color: white;
+}
+
+.mit .flip-card-back {
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    border: 2px solid #A31F34;
+}
+
+.mit .scrollable-content::-webkit-scrollbar-thumb {
+    background: rgba(163, 31, 52, 0.6);
+}
+
+/* Northeastern Styling */
+.northeastern .flip-card-front {
+    background: linear-gradient(135deg, #CC0000 0%, #a00000 100%);
+    color: white;
+}
+
+.northeastern .flip-card-back {
+    background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+    border: 2px solid #CC0000;
+}
+
+.northeastern .scrollable-content::-webkit-scrollbar-thumb {
+    background: rgba(204, 0, 0, 0.6);
+}
+
+.school-name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    line-height: 1.2;
+}
+
+.degree-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    opacity: 0.9;
+    line-height: 1.3;
+}
+
+.years {
+    font-size: 1rem;
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+.flip-icon {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    opacity: 0.7;
+}
+
+.section-icon {
+    margin-right: 0.5rem;
+    font-size: 1rem;
+}
+
+.activities-list, .classes-list, .awards-list {
+    margin-bottom: 1rem;
+}
+
+.activities-list ul, .classes-list ul, .awards-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.activities-list li, .classes-list li , .awards-list li{
+    background: rgba(255,255,255,0.8);
+    margin: 0.25rem 0;
+    padding: 0.5rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    border-left: 3px solid #6b7280;
+    line-height: 1.4;
+    word-wrap: break-word;
+}
+
+.ncssm .activities-list li, .ncssm .classes-list li {
+    border-left-color: #1e3a8a;
+}
+
+.mit .activities-list li, .mit .classes-list li {
+    border-left-color: #A31F34;
+}
+
+.northeastern .activities-list li, .northeastern .classes-list li {
+    border-left-color: #CC0000;
+}
+
+.hover-hint {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.8rem;
+    opacity: 0.6;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.6; }
+    50% { opacity: 0.3; }
+    100% { opacity: 0.6; }
+}
+
+
+/* Focus styles for accessibility */
+.flip-card:focus-within {
+    outline: 2px solid #4f46e5;
+    outline-offset: 2px;
+}
+
+.back-button:focus {
+    outline: 2px solid #4f46e5;
+    outline-offset: 2px;
+}
+
+/* Smooth transitions for better UX */
+.activities-list li, .classes-list li, .awards-list li {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.activities-list li:hover, .classes-list li:hover , .awards-list{
+    transform: translateX(2px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
