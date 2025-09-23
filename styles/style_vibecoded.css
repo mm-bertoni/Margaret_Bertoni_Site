@@ -13,7 +13,7 @@ body {
 
 .flip-card {
     background-color: transparent;
-    height: 450px;
+    height: 300px;
     perspective: 1000px;
     margin-bottom: 2rem;
 }
@@ -41,6 +41,7 @@ body {
     box-shadow: 0 8px 32px rgba(0,0,0,0.1);
     display: flex;
     flex-direction: column;
+    
     justify-content: center;
     align-items: center;
     padding: 2rem;
@@ -173,17 +174,17 @@ body {
     font-size: 1rem;
 }
 
-.activities-list, .classes-list {
+.activities-list, .classes-list, .awards-list {
     margin-bottom: 1rem;
 }
 
-.activities-list ul, .classes-list ul {
+.activities-list ul, .classes-list ul, .awards-list ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.activities-list li, .classes-list li {
+.activities-list li, .classes-list li , .awards-list li{
     background: rgba(255,255,255,0.8);
     margin: 0.25rem 0;
     padding: 0.5rem 0.75rem;
@@ -235,11 +236,11 @@ body {
 }
 
 /* Smooth transitions for better UX */
-.activities-list li, .classes-list li {
+.activities-list li, .classes-list li, .awards-list li {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.activities-list li:hover, .classes-list li:hover {
+.activities-list li:hover, .classes-list li:hover , .awards-list{
     transform: translateX(2px);
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }

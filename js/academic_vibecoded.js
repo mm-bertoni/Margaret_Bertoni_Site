@@ -5,7 +5,6 @@
  */
 
 // Main flip function for individual cards
-
 function flipCard(card) {
   card.classList.toggle("flipped");
 
@@ -18,7 +17,6 @@ function flipCard(card) {
     }
   }
 }
-
 // Handle window resize to ensure proper card heights
 window.addEventListener("resize", function () {
   // Reset any ongoing animations
