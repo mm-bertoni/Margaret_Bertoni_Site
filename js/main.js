@@ -23,17 +23,17 @@ function MainModule(experienceID = "#experiences") {
   /*Function to get an individual experience */
   function getExperienceCode(experience) {
     return (
-      `<div id="experiences" class="row">
+      `<div id="experiences" class="col-6">
             <div class="experience card">
                 <img 
                 src=${experience.positionPicture}
                 class="card-img-top"
-                alt=${experience.position}
+                alt=${experience.company}
                 />
-                <div class="card-body">
-                    <h5 class="card-title">${experience.company}</h5>
+                <div class="card-body ${experience.company}">
+                    <h5 class="card-title">${experience.company}: ${experience.position} : ${experience.startMonth} to ${experience.endMonth}</h5>
                     <p class="card-text">
-                       ${experience.position} : ${experience.startMonth} to ${experience.endMonth}
+                       
                        <ul>` + makeExperienceList(experience)
     );
   }
@@ -56,3 +56,48 @@ function MainModule(experienceID = "#experiences") {
 const main = MainModule();
 main.loadData();
 
+/* * * Functionality for highlight button * * */
+
+/* Clear function */
+function clearHighlight(){
+  const allCards = document.querySelectorAll(".card-body");
+  allCards.forEach((part) => {
+    // Takes off the highlight for any previously highlighted card.
+    part.classList.remove("highlight");
+  });
+}
+
+/* Lumafield Code */
+const lumafield = document.querySelector("#Lumafield");
+lumafield.addEventListener("click", function () {
+  const lumaCards = document.querySelectorAll(".Lumafield");
+  lumaCards.forEach((part) => {
+    part.classList.add("highlight");
+  });
+});
+
+/* Formlabs Code */
+const formlabs = document.querySelector("#Formlabs");
+formlabs.addEventListener("click", function () {
+  clearHighlight();
+  const formCards = document.querySelectorAll(".Formlabs");
+  formCards.forEach((part) => {
+    part.classList.add("highlight");
+  });
+});
+
+/* Sage Code */
+const sage = document.querySelector("#Sage");
+sage.addEventListener("click", function () {
+  clearHighlight();
+  const sageCards = document.querySelectorAll(".Sage");
+  sageCards.forEach((part) => {
+    part.classList.add("highlight");
+  });
+});
+
+/*Clear Button Code */
+const clear = document.querySelector("#clear");
+clear.addEventListener("click", function () {
+  clearHighlight();
+});
