@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content ="Margaret M Bertoni">
+    <meta name="description" content="Margaret M Bertoni's Academic Experience">
+    <title>Academic Experience</title>
+    <!--CSS Link-->
+    <link
+      rel="stylesheet"
+      href="../styles/style_vibecoded.css"/>
+    <!--Bootstrap Link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+</head>
+<body>
+  <!--Header with Nav Bar to Pages-->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-success " data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Margaret M Bertoni</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#">Academic Experience</a>
+                        <a class="nav-link" href="../index.html">Home</a>
+                        <a class="nav-link" href="../pages/work.html">Work Experience</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+<!--Vibecoded Cards Developed with Claude Sonnet 4-->
+<div class="container education-container">
+        <div class="text-center mb-5">
+            <h1 class="display-4 fw-bold text-dark mb-3">Margaret's Educational Journey</h1>
+            <p class="lead text-muted">Click on each card to explore the details</p>
+        </div>
+
+        <div class="row">
+           
+            <!-- Graduate Card -->
+            <div class="col-6">
+                <div class="flip-card northeastern" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="school-name">Northeastern University</div>
+                            <div class="degree-title">Masters of Science in Computer Science</div>
+                            <div class="years">2024-2027(est)</div>
+                            <i class="fas fa-user-graduate flip-icon"></i>
+                            <div class="hover-hint">Click to explore</div>
+                        </div>
+                        <div class="flip-card-back">
+                            <button class="back-button" onclick="flipCard(this.closest('.flip-card')); event.stopPropagation();">
+                                <i class="fas fa-times"></i>
+                            </button>
+                            <div class="back-content">
+                                <div class="scrollable-content">
+                                    <h4><i class="fas fa-book me-2"></i>Key Classes</h4>
+                                    <div class="classes-list">
+                                        <ul>
+                                            <li>Web Development</li>
+                                            <li>Computer Systems</li>
+                                            <li>Algorithms</li>
+                                            <li>Data Structures (C)</li>
+                                            <li>Object Oriented Design (Java)</li>
+                                            <li>Foundations of CS (Python)</li>
+                                    
+                                        </ul>
+                                    </div>
+                                    <h4><i class="fas fa-users me-2"></i>Activities</h4>
+                                    <div class="activities-list">
+                                        <ul>
+                                            <li>Amateur Screenwriting & Producing</li>
+                                            <li>Capture The Flag Club Member</li>
+                        
+                                        </ul>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+              <!-- Undergraduate Card -->
+            <div class ="col-6">
+                <div class="flip-card mit" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="school-name">MIT</div>
+                            <div class="degree-title">Bachelor of Science in Mechanical Engineering, Minor in Public Policy</div>
+                            <div class="years">2015-2019</div>
+                            <i class="fas fa-university flip-icon"></i>
+                            <div class="hover-hint">Click to explore</div>
+                        </div>
+                        <div class="flip-card-back">
+                            <button class="back-button" onclick="flipCard(this.closest('.flip-card')); event.stopPropagation();">
+                                <i class="fas fa-times"></i>
+                            </button>
+                            <div class="back-content">
+                                <div class="scrollable-content">
+                                    <h4><i class="fas fa-book me-2">Awards</h4>
+                                    <div class="awards-list">
+                                        <ul>
+                                            <li>MIT Delegate to the Student Conference on US Affairs at West Point 2018</li>
+                                            <li>Pi Tau Sigma Mechanical Engineering Honor Society 2017</li>
+                                            <li>MIT SHASS Burchard Scholar 2016</li>
+                                        </ul>
+                                    </div>
+                                    <h4><i class="fas fa-users me-2"></i>Activities</h4>
+                                    <div class="activities-list">
+                                        <ul>
+                                            <li>NCAA Div III Varsity Women's Epee Fencer 2015-2018</li>
+                                            <li>MIT Society of Women Engineer's Financial Officer 2018</li>
+                                            <li>MIT Fall Career Fair Co-Director for Week-of Logistics 2017</li>
+                                            <li>UROP Student Researcher MIT Lienhard Research Lab 2016-2017</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <h4><i class="fas fa-book me-2"></i>Key Classes</h4>
+                                    <div class="classes-list">
+                                        <ul>
+                                            <li>Product Engineering Processes (2.009)</li>
+                                            <li>Measurement & Instrumentation (2.671)</li>
+                                            <li>Design & Manufacturing I/II (2.007/2.008)</li>
+                                            <li>Toy Design (2.00b)</li>
+                                            <li>Making Public Policy</li>
+                                            <li>Special Topic/Senior Thesis: Finite Element Analysis</li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- High School Card -->
+             <div class="col-6">
+                <div class="flip-card ncssm" onclick="flipCard(this)"> <!--Tie to onclick functionality for JS-->
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="school-name">NC School of Science & Math</div>
+                            <div class="degree-title">High School Diploma</div>
+                            <div class="years">2013-2015</div>
+                            <i class="fas fa-graduation-cap flip-icon"></i>
+                            <div class="hover-hint">Click to explore</div>
+                        </div>
+                        <div class="flip-card-back">
+                            <button class="back-button" onclick="flipCard(this.closest('.flip-card')); event.stopPropagation();">
+                                <i class="fas fa-times"></i>
+                            </button>
+                            <div class="back-content">
+                                <div class="scrollable-content">
+                                    <h4><i class="fas fa-book me-2">Awards</h4>
+                                    <div class="awards-list">
+                                        <ul>
+                                            <li>2015 US Dept. of Education Presidential Scholar</li>
+                                            <li>2X NSBE Jr Try-Math-A-Lon Championship Team Member</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <h4><i class="fas fa-users me-2"></i>Activities</h4>
+                                    <div class="activities-list">
+                                        <ul>
+                                            <li>Concert Band - Clarinet</li>
+                                            <li>Peer College Counselor</li>
+                                            <li>NSBE Jr Try-Math-A-Lon Team</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+           
+            </div>
+
+            
+
+     
+        </div>
+       
+</div>   
+  
+
+    <div class = "container">
+        Vibecoded with Claude's Sonnet 4 Model!
+    </div>
+    <!--JS Link-->
+   <script src="../js/academic_vibecoded.js"></script>
+    <script type = "module" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</body>
+</html>
