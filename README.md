@@ -4,7 +4,7 @@
 Margaret M Bertoni
 
 ## Author Homepage Link
-https://mm-bertoni.github.io/Margaret_Bertoni_Site/index.html
+https://mm-bertoni.github.io/Margaret_Bertoni_Site/
 
 ## Class Link
 [CS 5610 Web Development (Online) - Fall 2025](https://johnguerra.co/classes/webDevelopment_online_fall_2025/)
