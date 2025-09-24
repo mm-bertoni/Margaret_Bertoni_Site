@@ -3,8 +3,8 @@
 ## Author
 Margaret M Bertoni
 
-## Author Website Link
-
+## Author Homepage Link
+https://mm-bertoni.github.io/Margaret_Bertoni_Site/index.html
 
 ## Class Link
 [CS 5610 Web Development (Online) - Fall 2025](https://johnguerra.co/classes/webDevelopment_online_fall_2025/)
@@ -18,7 +18,7 @@ This project is a personal website for Margaret M Bertoni, created for CS 5610 W
 ## Instructions to Build/Run
 
 *This is my personal website, so I won't be accepting edits. But if you were to try and run it locally:*
-1. Clone this repository:
+1. Clone this repository on the *main branch* (The deployment-branch is optimized for Github Pages):
 	```bash
 	git clone https://github.com/mm-bertoni/Margaret_Bertoni_Site.git
 	```
@@ -48,7 +48,10 @@ The Academic Experience page was vibecoded per the project instructions. I used 
 
 I used the code generated for the academic.html, style_vibecoded.css, and academic_vibecoded.js files. I then went through and edited them. I added the relevant school information. I changed the content of the cards to include awards as well. I removed any javascript or css that I didn't understand. 
 
+My icon was generated with Adobe Illustrator's GenAI "Generative Vectors" function. I used the prompts:
+*Initials MB*
 
+*Initials MB Blue Background*
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
