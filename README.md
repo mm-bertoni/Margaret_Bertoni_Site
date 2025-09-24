@@ -15,6 +15,9 @@ This project is a personal website for Margaret M Bertoni, created for CS 5610 W
 ## Screenshot
 ![screenshot](<images/Screenshot 2025-09-24 at 10.24.15 AM.png>)
 
+## Design Document
+[PDF](<Project 1 Design Document Margaret Bertoni Website.pdf>)
+
 ## Instructions to Build/Run
 
 *This is my personal website, so I won't be accepting edits. But if you were to try and run it locally:*
