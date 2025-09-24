@@ -4,7 +4,7 @@ function MainModule(experienceID = "#experiences") {
   const me = {};
   /*Gets experiences section */
   const experiencesElement = document.querySelector(experienceID);
-  /*Function to make list out of items List */
+  /*Function to make ul list out of experience items List */
   function makeExperienceList(experience) {
     let listTemplate = ``;
     for (const entry of experience.items) {
@@ -21,6 +21,7 @@ function MainModule(experienceID = "#experiences") {
     );
   }
   /*Function to get an individual experience */
+  /*Add company to class to enable the custom highlighting functionality*/
   function getExperienceCode(experience) {
     return (
       `<div id="experiences" class="col-6">
@@ -44,6 +45,7 @@ function MainModule(experienceID = "#experiences") {
       .map(getExperienceCode)
       .join("\n");
   }
+  /*Async load of data from the json */
   async function loadData() {
     const res = await fetch("../data/work_experience.json");
     const experiences = await res.json();
@@ -56,10 +58,9 @@ function MainModule(experienceID = "#experiences") {
 const main = MainModule();
 main.loadData();
 
-/* * * Functionality for highlight button * * */
-
-/* Clear function */
-function clearHighlight(){
+/* * * Functionality for highlight button (Custom) * * */
+/* Clear function to turn off highlight */
+function clearHighlight() {
   const allCards = document.querySelectorAll(".card-body");
   allCards.forEach((part) => {
     // Takes off the highlight for any previously highlighted card.
@@ -67,7 +68,7 @@ function clearHighlight(){
   });
 }
 
-/* Lumafield Code */
+/* Lumafield Code to highlight Lumafield entries. Also turns off any existing highlight*/
 const lumafield = document.querySelector("#Lumafield");
 lumafield.addEventListener("click", function () {
   const lumaCards = document.querySelectorAll(".Lumafield");
@@ -76,7 +77,7 @@ lumafield.addEventListener("click", function () {
   });
 });
 
-/* Formlabs Code */
+/* Formlabs Code to highlight Formlabs entries. Also turns off any existing highlights*/
 const formlabs = document.querySelector("#Formlabs");
 formlabs.addEventListener("click", function () {
   clearHighlight();
@@ -86,7 +87,7 @@ formlabs.addEventListener("click", function () {
   });
 });
 
-/* Sage Code */
+/* Sage Code to highlight Sage Analysis Group entries. Also turns off any existing highlights*/
 const sage = document.querySelector("#Sage");
 sage.addEventListener("click", function () {
   clearHighlight();
@@ -96,7 +97,7 @@ sage.addEventListener("click", function () {
   });
 });
 
-/*Clear Button Code */
+/*Clear Button Code - Clears any highlights that are currently on*/
 const clear = document.querySelector("#clear");
 clear.addEventListener("click", function () {
   clearHighlight();

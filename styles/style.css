@@ -6,11 +6,12 @@ ul {
     text-align:left;
 }
 
+/*To align paragraph text to the left*/
 p {
     text-align: left;
 }
 
-/*Formatting to highlight specific experiences*/
+/*Formatting to highlight specific experiences. Used as part of my custom/unique feature*/
 .highlight{
     background-color: yellow;
 }
