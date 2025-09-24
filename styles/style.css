@@ -15,12 +15,3 @@ p {
     background-color: yellow;
 }
 
-/*
-To make the current status more prominent
-*/
-p#currentStatus {
-    font-size:25px;
-    font-weight: bold;
-    text-shadow: 1px 1px green;
-    
-}
