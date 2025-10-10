@@ -13,7 +13,7 @@ https://mm-bertoni.github.io/Margaret_Bertoni_Site/
 This project is a personal website for Margaret M Bertoni, created for CS 5610 Web Development at Northeastern University. The site showcases academic and work experience, and demonstrates modern web development skills including HTML, CSS, JavaScript, and Bootstrap.
 
 ## Screenshot
-![screenshot](<images/Screenshot 2025-09-24 at 10.24.15 AM.png>)
+maybe a colored pic instead of black-white photo for your selfi.
 
 ## Design Document
 [PDF](<Project 1 Design Document Margaret Bertoni Website.pdf>)
