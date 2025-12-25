@@ -16,7 +16,7 @@ p {
 }
 
 .card-img-top {
-    max-width: 300px; 
+    max-width: 250px; 
     height: auto; 
     object-fit: contain; 
 }
