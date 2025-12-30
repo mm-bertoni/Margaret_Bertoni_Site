@@ -22,8 +22,8 @@ p {
     margin: auto; 
 }
 
-p {
-    padding: 10px; 
+.experienceContainer {
+    gap: 10px; 
 }
 
 
